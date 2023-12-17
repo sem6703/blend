@@ -41,7 +41,15 @@ ul li p {padding-left: 12px;}
 .pol{border-collapse: collapse;}
 .pol tr{border:1px solid blue;}
 .pol tr td{border:1px solid blue;padding: 4px;}
-
+#cop{
+	width: 100px;
+	height: 22px;
+	background: #ded;
+	position: absolute; 
+	left: -9999px;
+	}
+.f {cursor: pointer; }
+.f:hover {transform: scale(1.1);}
 
 .z {display: inline-block;width: 18px; aspect-ratio:1;background-size: cover;}
 .z2 {display: inline-block;width: 9px; aspect-ratio:2;background-size: cover;}
@@ -210,8 +218,9 @@ background-image: url("data:image/gif;base64,R0lGODlhEAAQANUAAB0dHS02R1d2tVZ0sCs
 .u2{background-image: /*выпадающее*/ url("data:image/gif;base64,R0lGODlhEAAQALMAACgoKM/Pz2RkZEpKStnZ2bGxsbCwsJGRkTAwMC8vLz09PTo6Ojk5OQAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQEewABACwAAAAAEAAQAAAEMBDISWlaNVOlO+/ZB25jJZbAGQhUcUwnMBBFYZjZYNw4KsUjIEjo8QEQDBQCoUBEAAA7")}
 .u3{background-image: /*настройки*/ url("data:image/gif;base64,R0lGODlhEAAQANUAABgYGCEhIdra2tjY2B8fHzExMaurqzw8PDQ0NNzc3DIyMj4+Pi8vLxoaGq6urtvb29DQ0JmZmdTU1NPT09HR0T8/Pz09PZycnCAgINXV1aCgoC4uLjAwMKSkpBsbGy0tLSsrKyIiIjY2NtbW1p+fn6KiotLS0pubmzMzMwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQEewABACwAAAAAEAAQAAAGjECAcAjweIhIQEOIESRCwiWx4Kg0EE5Rw+JAEQ2PySWTSIwupoRDCjhAynC4yYKMPBIPgeCeuLADCBJlGh8gJHcjIlAATnAbQh+NZUcDkhxCG416RwQKE2UdHAwldxkIBER2cXAnbAALFHhxdxMVXw8UEZ8JEhEQD2tDDAZ0Ck4IbQYFSUIElQHM0cxBADs=")}
 .u4{background-image: /*арма*/ url("data:image/gif;base64,R0lGODlhEAAQANUAABgYGBkZGX9/f9DQ0Hx8fBoaGtfX19zc3NTU1BsbG9nZ2SIiInBwcK2trdHR0dra2lhYWMvLy9vb29XV1X19fdjY2L29vV1dXSUlJX5+fqKioiMjI9PT0zo6OqGhoYCAgEpKSru7u0tLS8PDwxwcHNbW1szMzK6uroGBgQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQEewABACwAAAAAEAAQAAAGfkCAcAgIFALEJDHD+SCTxoQ0MTg4pkehwHDodg0f0eNQcQKq3m4HNPI6CgACQvEYe+uPCeFJtB8SSkQBfiSBQgEUEl4UcIEQYxKKBxd8QwsRXRoeiiYbSgyKFhsLIV0MlQANXZQAF2MnjUMOZBhCGyUHHLFaEwJ8FBMoqIZJQQA7")}
-.u5{background-image: url()}
+.u5{background-image:/*выпадение*/ url("data:image/gif;base64,R0lGODlhEAAQALMAACgoKCoqKsTExFRUVCkpKVhYWNLS0lpaWlZWVn9/f8zMzFVVVdPT01dXV1lZWcHBwSH/C05FVFNDQVBFMi4wAwEAAAAh+QQEewABACwAAAAAEAAQAAAELhDISau9OOsNAqlEcAnFJxHOI1aDcXzEYjgm6wYynSFGwjQ1DEIB5BiPyKQSGQEAOw==")}
 .u6{background-image: url()}
+
 
 
 
@@ -643,34 +652,40 @@ biscot distance 0.001m
 иначе разлепить их будет невозможно. <br>
 alt+лкм щелкай по грани в режиме редакции ребер, чтобы выделить зацикленную линию.<br>
 s=масштабнуть грань <br>
-3=режим редакции полигонов <br>
+3=режим редакции полигонов <br><div style="display:inline-flex;align-items:center;">
+<div class="z wi1" style="box-sizing: content-box;border:2px solid red"></div><div class="z wi2"></div><div class="z wi3"></div><div class="z wi4"></div><div class="z wi5"></div></div>
 alt+s <br>
 e=экструдируй, разлепляй лапы (g)<br>
 loop tools =
 </div>
 <div class="mooon">14)<br> 
-гл.меню-edit-preferences-addons-в поиске вбей loop tools <br>
+гл.меню→edit→<div class="z u3"></div>preferences→addons→в поиске вбей loop tools <br>
 ставь галочку напротив и закрывай окно. <br>
 mesh: looptools <br>
 глаза. выделяй точку где будет глаз. <br>
 ctrl+shift+b , тяни мышью в сторону <br>
 лкм <br>
-пкм-looptools-circle <br>
+пкм→looptools→circle <br>
 квадрат экструдируй внутрь глазницы <br>
 уши. <br>
 выделяй верхний полигон <br>
 t=вставитьвнутрь еще один полигон <br>
-=режим редактирования точек <br>
+<div class="z ti3"></div>=режим редактирования точек <br>
 r=вращение <br>
 o 
 пропорциональное редактирование <br>
-global <br>
+<div style="display:inline-flex;align-items:center;">
+<div class="z tj1"></div><span style="color: white; background: #262629e8;">Global</span><div class="z u5"></div><div class="z tj2"></div><div class="z u5"></div><div class="z tj3"></div><div class="z tj4"></div><div class="z u5"></div><div class="z tj5" style="box-sizing: content-box;border:2px solid red"></div><div class="z tj6"></div><div class="z u5"></div>
+</div>
 верхнее среднее меню <br>
 как будто тянешь тесто для пиццы <br>
 колесо=радиус влияния<br>
 </div> 
 <div class="mooon">16)<br>
-напротив каждой кнопки щелкни раскрытие и жми apply <br>
+<div class="z i10"></div> напротив каждой кнопки щелкни 
+<input type="checkbox" checked>
+раскрытие и жми apply <br>
+subdivision →→→  apply<br>
 у всех модификатор сверху вниз <br>
 ctrl+shift+b растягивай полученое <br>
 хвост. щелкни по полигону на кончике <br>
@@ -793,41 +808,50 @@ g
 assign to new groups 
 </div>
 <div class="mooon"><br>32)<br><span id=minu></span>
-N  меню <div class="z n1" title="n1"></div><div class="z n2" title="n2"></div><div class="z n3" title="n3"></div><div class="z n4" title="n4"></div><div class="z n5" title="n5"></div>
-в1л <div class="z ti1" title="ti1"></div><div class="z ti2" title="ti2"></div><div class="z ti3" title="ti3"></div><div class="z ti4" title="ti4"></div><div class="z ti5" title="ti5"></div>
-в1п <div class="z tk1" title="tk1"></div><div class="z tk2" title="tk2"></div><div class="z tk3" title="tk3"></div><div class="z tk4" title="tk4"></div><div class="z tk5" title="tk5"></div><div class="z tk6" title="tk6"></div><div class="z tk7" title="tk7"></div><div class="z tk8" title="tk8"></div>
-в2л <div class="z wi1" title="wi1"></div><div class="z wi2" title="wi2"></div><div class="z wi3" title="wi3"></div><div class="z wi4" title="wi4"></div><div class="z wi5" title="wi5"></div>
-в2п <div class="z wk1" title="wk1"></div><div class="z wk2" title="wk2"></div><div class="z wk3" title="wk3"></div><div class="z wk4" title="wk4"></div><div class="z wk5" title="wk5"></div>
-вц <div class="z tj1" title="tj1"></div><div class="z tj2" title="tj2"></div><div class="z tj3" title="tj3"></div><div class="z tj4" title="tj4"></div><div class="z tj5" title="tj5"></div><div class="z tj6" title="tj6"></div>
+N  меню <div class="z n1" title="n1" onclick="rcop('z n1')"></div><div class="z n2 f" title="n2" onclick="rcop('z n2')"></div><div class="z n3 f" title="n3" onclick="rcop('z n3')"></div><div class="z n4 f" title="n4" onclick="rcop('z n4')"></div><div class="z n5 f" title="n5" onclick="rcop('z n5')"></div>
+в1л <div class="z ti1 f" title="ti1" onclick="rcop('z ti1')"></div><div class="z ti2 f" title="ti2" onclick="rcop('z ti2')"></div><div class="z ti3 f" title="ti3" onclick="rcop('z ti3')"></div><div class="z ti4 f" title="ti4" onclick="rcop('z ti4')"></div><div class="z ti5 f" title="ti5" onclick="rcop('z ti5')"></div>
+в1п <div class="z tk1 f" title="tk1" onclick="rcop('z tk1')"></div><div class="z tk2 f" title="tk2" onclick="rcop('z tk2')"></div><div class="z tk3 f" title="tk3" onclick="rcop(''z tk3)"></div><div class="z tk4 f" title="tk4" onclick="rcop('z tk4')"></div><div class="z tk5 f" title="tk5" onclick="rcop('z tk5')"></div><div class="z tk6 f" title="tk6" onclick="rcop('z tk6')"></div><div class="z tk7 f" title="tk7" onclick="rcop('z tk7')"></div><div class="z tk8 f" title="tk8" onclick="rcop('z tk8')"></div>
+в2л <div class="z wi1 f" title="wi1" onclick="rcop('z wi1')"></div><div class="z wi2 f" title="wi2" onclick="rcop('z wi2')"></div><div class="z wi3 f" title="wi3" onclick="rcop('z wi3')"></div><div class="z wi4 f" title="wi4" onclick="rcop('z wi4')"></div><div class="z wi5 f" title="wi5" onclick="rcop('z wi5')"></div>
+в2п <div class="z wk1 f" title="wk1" onclick="rcop('z wk1')"></div><div class="z wk2 f" title="wk2" onclick="rcop('z wk2')"></div><div class="z wk3 f" title="wk3" onclick="rcop('z wk3')"></div><div class="z wk4 f" title="wk4" onclick="rcop('z wk4')"></div><div class="z wk5 f" title="wk5" onclick="rcop('z wk5')"></div>
+вц <div class="z tj1 f" title="tj1" onclick="rcop('z tj1')"></div><div class="z tj2 f" title="tj2" onclick="rcop('z tj2')"></div><div class="z tj3 f" title="tj3" onclick="rcop('z tj3')"></div><div class="z tj4 f" title="tj4" onclick="rcop('z tj4')"></div><div class="z tj5 f" title="tj5" onclick="rcop('z tj5')"></div><div class="z tj6 f" title="tj6" onclick="rcop('z tj6')"></div>
 гизмо 
 гл 
 гп 
 гц 
-инстр <div class="z i1" title="i1"></div><div class="z i2" title="i2"></div><div class="z i3" title="i3"></div><div class="z i4" title="i4"></div><div class="z i5" title="i5"></div><div class="z i6" title="i6"></div><div class="z i7" title="i7"></div><div class="z i8" title="i8"></div><div class="z i9" title="i9"></div><div class="z i10" title="i10"></div><div class="z i11" title="i11"></div><div class="z i12" title="i12"></div><div class="z i13" title="i13"></div><div class="z i14" title="i14"></div><div class="z i15" title="i15"></div><div class="z i16" title="i16"></div><div class="z i17" title="i17"></div><div class="z i18" title="i18"></div>
-мби <div class="z q1" title="q1"></div><div class="z q2" title="q2"></div><div class="z q3" title="q3"></div><div class="z q4" title="q4"></div><div class="z q5" title="q5"></div><div class="z q6" title="q6"></div>
-<div class="z q7" title="q7"></div><div class="z q8" title="q8"></div><div class="z q9" title="q9"></div><div class="z q10" title="q10"></div><div class="z q11" title="q11"></div><div class="z q12" title="q12"></div>
+инстр <div class="z i1 f" title="i1" onclick="rcop('z i1')"></div><div class="z i2 f" title="i2" onclick="rcop('z i2')"></div><div class="z i3 f" title="i3" onclick="rcop('z i3')"></div><div class="z i4 f" title="i4" onclick="rcop('z i4')"></div><div class="z i5 f" title="i5" onclick="rcop('z i5')"></div><div class="z i6 f" title="i6" onclick="rcop('z i6')"></div><div class="z i7 f" title="i7" onclick="rcop('z i7')"></div><div class="z i8 f" title="i8" onclick="rcop('z i8')"></div><div class="z i9 f" title="i9" onclick="rcop('z i9')"></div><div class="z i10 f" title="i10" onclick="rcop('z i10')"></div><div class="z i11 f" title="i11" onclick="rcop('z i11')"></div><div class="z i12 f" title="i12" onclick="rcop('z i12')"></div><div class="z i13 f" title="i13" onclick="rcop('z i13')"></div><div class="z i14 f" title="i14" onclick="rcop('z i14')"></div><div class="z i15 f" title="i15" onclick="rcop('z i15')"></div><div class="z i16 f" title="i16" onclick="rcop('z i16')"></div><div class="z i17 f" title="i17" onclick="rcop('z i17')"></div><div class="z i18 f" title="i18" onclick="rcop('z i18')"></div>
+
+мби <div class="z q1 f" title="q1" onclick="rcop('z q1')"></div><div class="z q2 f" title="q2" onclick="rcop('z q2')"></div><div class="z q3 f" title="q3" onclick="rcop('z q3')"></div><div class="z q4 f" title="q4" onclick="rcop('z q4')"></div><div class="z q5 f" title="q5" onclick="rcop('z q5')"></div><div class="z q6 f" title="q6" onclick="rcop('z q6')"></div><div class="z q7 f" title="q7" onclick="rcop('z q7')"></div><div class="z q8 f" title="q8" onclick="rcop('z q8')"></div><div class="z q9 f" title="q9" onclick="rcop('z q9')"></div><div class="z q10 f" title="q10" onclick="rcop('z q10')"></div><div class="z q11 f" title="q11" onclick="rcop('z q11')"></div><div class="z q12 f" title="q12" onclick="rcop('z q12')"></div>
 ппд 
 правая 
-рука <div class="z " title="h1"></div><div class="z h2" title="h2"></div><div class="z h3" title="h3"></div><div class="z h4" title="h4"></div>
+рука <div class="z h1 f" title="h1" onclick="rcop('z h1')"></div><div class="z h2 f" title="h2" onclick="rcop('z h2')"></div><div class="z h3 f" title="h3" onclick="rcop('z h3')"></div><div class="z h4 f" title="h4" onclick="rcop('z h4')"></div>
 ----
 модификаторы
 modify
-<div class="z i10_1" title="i10_1"></div><div class="z i10_2" title="i10_2"></div><div class="z i10_3" title="i10_3"></div><div class="z i10_4" title="i10_4"></div><div class="z i10_5" title="i10_5"></div>
+<div class="z i10_1 f" title="i10_1" onclick="rcop('z i10_1')"></div><div class="z i10_2 f" title="i10_2" onclick="rcop('z i10_2')"></div><div class="z i10_3 f" title="i10_3" onclick="rcop('z i10_3')"></div><div class="z i10_4 f" title="i10_4" onclick="rcop('z i10_4')"></div><div class="z i10_5 f" title="i10_5" onclick="rcop('z i10_5')"></div>
 generate
-<div class="z i10_6" title="i10_6"></div><div class="z i10_7" title="i10_7"></div><div class="z i10_8" title="i10_8"></div><div class="z i10_9" title="i10_9"></div><div class="z i10_10" title="i10_10"></div><div class="z i10_11" title="i10_11"></div><div class="z i10_12" title="i10_12"></div><div class="z i10_13" title="i10_13"></div><div class="z i10_14" title="i10_14"></div><div class="z i10_15" title="i10_15"></div><div class="z i10_16" title="i10_16"></div><div class="z i10_17" title="i10_17"></div><div class="z i10_18" title="i10_18"></div><div class="z i10_19" title="i10_19"></div><div class="z i10_20" title="i10_20"></div><div class="z i10_21" title="i10_21"></div><div class="z i10_22" title="i10_22"></div><div class="z i10_23" title="i10_23"></div><div class="z i10_24" title="i10_24"></div>
+<div class="z i10_6 f" title="i10_6" onclick="rcop('z i10_6')"></div><div class="z i10_7 f" title="i10_7" onclick="rcop('z i10_7')"></div><div class="z i10_8 f" title="i10_8" onclick="rcop('z i10_8')"></div><div class="z i10_9 f" title="i10_9" onclick="rcop('z i10_9')"></div><div class="z i10_10 f" title="i10_10" onclick="rcop('z i10_10')"></div><div class="z i10_11 f" title="i10_11" onclick="rcop('z i10_11')"></div><div class="z i10_12 f" title="i10_12" onclick="rcop('z i10_12')"></div><div class="z i10_13 f" title="i10_13" onclick="rcop('z i10_13')"></div><div class="z i10_14 f" title="i10_14" onclick="rcop('z i10_14')"></div><div class="z i10_15 f" title="i10_15" onclick="rcop('z i10_15')"></div><div class="z i10_16 f" title="i10_16" onclick="rcop('z i10_16')"></div><div class="z i10_17 f" title="i10_17" onclick="rcop('z i10_17')"></div><div class="z i10_18 f" title="i10_18" onclick="rcop('z i10_18')"></div><div class="z i10_19 f" title="i10_19" onclick="rcop('z i10_19')"></div><div class="z i10_20 f" title="i10_20" onclick="rcop('z i10_20')"></div><div class="z i10_21 f" title="i10_21" onclick="rcop('z i10_21')"></div><div class="z i10_22 f" title="i10_22" onclick="rcop('z i10_22')"></div><div class="z i10_23 f" title="i10_23" onclick="rcop('z i10_23')"></div><div class="z i10_24 f" title="i10_24" onclick="rcop('z i10_24')"></div>
 deform
-<div class="z i10_25" title="i10_25"></div><div class="z i10_26" title="i10_26"></div><div class="z i10_27" title="i10_27"></div><div class="z i10_28" title="i10_28"></div><div class="z i10_29" title="i10_29"></div><div class="z i10_30" title="i10_30"></div><div class="z i10_31" title="i10_31"></div><div class="z i10_32" title="i10_32"></div><div class="z i10_33" title="i10_33"></div><div class="z i10_34" title="i10_34"></div><div class="z i10_35" title="i10_35"></div>
+<div class="z i10_25 f" title="i10_25" onclick="rcop('z i10_25')"></div><div class="z i10_26 f" title="i10_26" onclick="rcop('z i10_26')"></div><div class="z i10_27 f" title="i10_27" onclick="rcop('z i10_27')"></div><div class="z i10_28" title="i10_28 f" onclick="rcop('z i10_28')"></div><div class="z i10_29 f" title="i10_29" onclick="rcop('z i10_29')"></div><div class="z i10_30 f" title="i10_30" onclick="rcop('z i10_30')"></div><div class="z i10_31 f" title="i10_31" onclick="rcop('z i10_31')"></div><div class="z i10_32 f" title="i10_32" onclick="rcop('z i10_32')"></div><div class="z i10_33 f" title="i10_33" onclick="rcop('z i10_33')"></div><div class="z i10_34 f" title="i10_34" onclick="rcop('z i10_34')"></div><div class="z i10_35 f" title="i10_35" onclick="rcop('z i10_35')"></div>
 
-phisics<div class="z i10_36" title="i10_36"></div><div class="z i10_37" title="i10_37"></div><div class="z i10_38" title="i10_38"></div><div class="z i10_39" title="i10_39"></div><div class="z i10_40" title="i10_40"></div><div class="z i10_41" title="i10_41"></div><div class="z i10_42" title="i10_42"></div><div class="z i10_43" title="i10_43"></div><div class="z i10_44" title="i10_44"></div><div class="z i10_45" title="i10_45"></div>
+phisics<div class="z i10_36 f" title="i10_36" onclick="rcop('z i10_36')"></div><div class="z i10_37 f" title="i10_37" onclick="rcop('z i10_37')"></div><div class="z i10_38 f" title="i10_38" onclick="rcop('z i10_38')"></div><div class="z i10_39 f" title="i10_39" onclick="rcop('z i10_39')"></div><div class="z i10_40 f" title="i10_40" onclick="rcop('z i10_40')"></div><div class="z i10_41 f" title="i10_41" onclick="rcop('z i10_41')"></div><div class="z i10_42 f" title="i10_42" onclick="rcop('z i10_42')"></div><div class="z i10_43 f" title="i10_43" onclick="rcop('z i10_43')"></div><div class="z i10_44 f" title="i10_44" onclick="rcop('z i10_44')"></div>
+<div class="z i10_45 f" title="i10_45" onclick="rcop('z i10_45')"></div>
 ----
 
 
 
 ----
 другие обьекты
-мохнатый глаз <div class="z u1" title="u1"></div>
-настройки<div class="z u3" title="u3"></div>
-арма<div class="z u4" title="u4"></div><div class="z u5" title="u5"></div><div class="z u5" title="u5"></div>
+мохнатый глаз <div class="z u1 f" title="u1" onclick="rcop('z u1')"></div>
+<!-- div class="z u2 f" title="u2" onclick="rcop('z u2')"></div -->
+настройки<div class="z u3 f" title="u3" onclick="rcop('z u3')"></div>
+арма<div class="z u4 f" title="u4" onclick="rcop('z u4')"></div>
+выпад<div class="z u5 f" title="u5" onclick="rcop('z u5')"></div>
+<div class="z u6 f" title="u6" onclick="rcop('z u6')"></div>
+
+<div class="z f" style="border:1px solid black" onclick="copp('→')">→</div>
+
+
+<textarea id="cop">для копирования</textarea>
 </div>
 <div class="mooon"><br>34)<br>
 образовывается вертекс группа 
@@ -1981,17 +2005,41 @@ shift+a, light-sun
 beginer - junior - middle - senior 
 </div>
 <div>
-взляд прикован к началу координат, казалось, это легко исправить... хуй там
+взгляд прикован к началу координат, казалось, это легко исправить... хуй там
 никак, но можно приковать к центру обьекта. выбрать обьект, numdel
-~ - view selected. во весь экран выделенный обьект.
+~ → view selected. во весь экран выделенный обьект.
+
 
 куда делися скрытые обьекты? в дереве присутствют, на сцене их нет... глаз не помогает.
 
-обнаружен простой скелет без пальцев. shift+a, armature - basic - basic human 
+обнаружен простой скелет без пальцев. shift+a, armature → basic → basic human 
+
+модификатор надо применять. он удалится, но на обьекте это не скажется.
+mode=edit <br>
+<div class="z i10"></div> → <div class="z i10_14"></div> → <div class="z u5"></div> → Apply 
+
+
+материал. почему обьект красится материалом целиком? вроде же каждую грань можно было в свой материал.... что сделать?
 
 </div>
-<script>
 
+
+<script>
+function rcop(x){// копирование 
+			let a='<div class="'+x+'"></div>';
+			cop.value=a;
+			cop.select();
+			document.execCommand('copy');
+			window.getSelection()?.removeAllRanges();			
+}
+
+function copp(x){// копирование 
+			let a=x;
+			cop.value=a;
+			cop.select();
+			document.execCommand('copy');
+			window.getSelection()?.removeAllRanges();			
+}
 </script>   
 </body>
 </html>
