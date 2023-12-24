@@ -323,6 +323,8 @@ background-image: url("data:image/gif;base64,R0lGODlhEAAQANUAAB0dHS02R1d2tVZ0sCs
 .mooon:nth-child(odd) {background: #fed;}
 .mooon:nth-child(even) {background: #ded;}
 .moon br {display: none;}
+
+.usy {border:1px solid blue;padding: 0 30px 0 13px; width: fit-content;}
   </style>  
 </head>
 <body text=#000>
@@ -814,10 +816,10 @@ edit → experimental
 <table class="pol" style="margin-left:12px;collapse: collapse; border:1px solid black;">
 <tr><td colspan=2 style="text-align: center;">debugging </td></tr>
 <tr><td></td><td>undo legacy </td></tr>
-<tr><td><a href="https://symbl.cc/ru/collections/check/" style="text-decoration:none">🗸</a></td><td>override auto reslyne</td></tr> 
+<tr><td><a href="https://symbl.cc/ru/collections/check/" style="text-decoration:none"><input type=checkbox checked></a></td><td>override auto reslyne</td></tr> 
 <tr><td></td><td>cycles debug </td></tr>
 <tr><td></td><td>asset debug info </td></tr>
-<tr><td><a href="https://symbl.cc/ru/collections/check/" style="text-decoration:none">🗸</a></td><td>asset indexing</td></tr>
+<tr><td><a href="https://symbl.cc/ru/collections/check/" style="text-decoration:none"><input type=checkbox checked></a></td><td>asset indexing</td></tr>
 </table>
 </div>
 <div class="mooon"><br>28)<br>
@@ -902,7 +904,7 @@ phisics<div class="z i10_36 f" title="i10_36" onclick="rcop('z i10_36')"></div><
 <div class="z u6 f" title="u6" onclick="rcop('z u6')"></div>
 
 <div class="z f" style="border:1px solid black" onclick="copp('→')">→</div>
-<div class="z f" style="border:1px solid black" onclick="copp('🗸')">🗸</div>
+<div class="z f" style="border:1px solid black" onclick="copp('<input type=checkbox checked>')"><input type=checkbox checked></div>
 <div class="z f" style="border:1px solid black; width: 40px;height: 20px;" onclick="copp(`<table class=pol><tr><td>  </td></tr></table>`)">table</div>
 <div class="z f" style="border:1px solid black" onclick="copp('🔴')">🔴</div>
 <div class="z f" style="border:1px solid black" onclick="copp('°')">°</div>
@@ -940,9 +942,9 @@ mod <div class="z i17"></div> viewport display <br>
 <table class="pol">
 <tr><td>display all octa </td></tr>
 <tr><td>show names </td></tr>
-<tr><td>🗸shapes </td></tr>
-<tr><td>🗸group colors </td></tr>
-<tr><td>🗸in front кость видна сквозь обьект </td></tr>
+<tr><td><input type=checkbox checked>shapes </td></tr>
+<tr><td><input type=checkbox checked>group colors </td></tr>
+<tr><td><input type=checkbox checked>in front кость видна сквозь обьект </td></tr>
 </table>
 <table class="pol">
 <tr><td>вл<div class="z i9"></div> object mode </td></tr>
@@ -991,7 +993,7 @@ weight - сила воздействия <br>
 <div class="mooon"><br>40)<br>
 вп <div class="z ti2"></div>→ viewport overlays → geometry 
 <table class=pol>
-<tr><td> 🗸 wire хуякс и видим картину </td></tr>
+<tr><td> <input type=checkbox checked> wire хуякс и видим картину </td></tr>
 <tr><td>  opacity </td></tr>
 <tr><td>  fade inact </td></tr>
 <tr><td>  face orient </td></tr>
@@ -1072,8 +1074,8 @@ shift <br>
 add → mesh → single vect → add single vert <br>
 сначала вкл аддон <br>
 edit→ prefer→ addons → extra <br>
-*add curve extra object <br>
-*add mesh extra object <br>
+<input type=checkbox checked>add curve extra object <br>
+<input type=checkbox checked>add mesh extra object <br>
 галки ставь <br>
 создалась одна вершина. g <br>
 ctrl+z*3 <br>
@@ -1084,14 +1086,16 @@ alt <br>
 e <br>
 subdivision <br>
 на три части <br>
+<div class="usy">
 number of cut=3 <br>
 smoothren <br>
-*create n-gones <br>
+<input type=checkbox checked>create n-gones <br>
 quad corner type <br>
 fractal <br>
 along normal <br>
 random seed <br>
-- добавились три вершины <br>
+</div>
+<div class="z ti3"></div> - добавились три вершины <br>
 </div>
 <div class="mooon"><br>48)<br>
 e <br>
@@ -1100,7 +1104,7 @@ mirror <br>
 tab <br>
 g <br>
 mirror v applay <br>
-skin <br>
+<div class="z i10"></div> skin <br>
 shift+z <br>
 shift <br>
 tab <br>
@@ -1109,13 +1113,13 @@ a селект вcе вершины <br>
 shift+alt+z*2 <br>
 ctrl <br>
 вокруг одной вершины розовая окружность - обозначает самую главную кость .<br>
-задать так. выделить. skin → mark root <br>
+задать так. выделить. <div class="z i10"></div> skin → mark root <br>
 shift+z*3 <br>
 s*2 <br>
 ctrl+a наращ толщину <br>
 ctrl+a <br>
 ctrl+r вставил вершины шеи <br>
-subdivision <br>
+ <div class="z i10"></div> subdivision <br>
 tab <br>
 ctrl+a 
 </div>
@@ -1134,12 +1138,12 @@ shift <br>
 skin → create armature создать скелет <br>
 главная кости палочки <br>
 ctrl+tab <br>
-vertex paint texture paint <br>
-edit mode <br>
-sculpt mode <br>
-object mode <br>
-weight paint <br>
-skin→ → apply. при этом модификатор исчез <br>
+<div class="z ti9"></div>vertex paint <div class="z ti11"></div>texture paint <br>
+<div class="z ti2"></div>edit mode <br>
+<div class="z ti8"></div>sculpt mode <br>
+<div class="z ti7"></div>object mode <br>
+<div class="z ti10"></div>weight paint <br>
+skin→ <div class="z u5"></div> → apply. при этом модификатор исчез <br>
 subdivide <br>
 armature - выше subdivision 
 </div>
@@ -1151,22 +1155,23 @@ ctrl+p <br>
 weight paint <br>
 n- меню → tool → symetry <br>
 nm→ tool → options → autonormalize <br>
-*mir vertex <br>
+<div class="usy">
+<input type=checkbox checked>mir vertex <br>
 mirror=x <br>
-*topolon <br>
+<input type=checkbox checked>topolon </div>
 ctrl <br>
 ctrl+z <br>
 ctrl <br>
 ctrl+tab <br>
 кости светится - щелкни по ней ctrl <br>
 мы не сделали нейминг костей. симметрия не получится.<br>
-viewport display → show *names <br>
+<div class="z i17"></div> display → show <input type=checkbox checked>names <br>
 появится имена у всех костей <br>
 f2 - дать имя <br>
 вл1 → armature → names → autoname leftright <br>
 к именнам добавились буквы l,r <br>
 main.косr <br>
-F2 <br>
+ 🔴 F2 <br>
 ctrl+v
 </div>
 <div class="mooon"><br>56)<br>
@@ -1185,6 +1190,32 @@ ctrl+tab <br>
 r = анимирую голову как хочу <br>
 ctrl+кость <br>
 вершины красным прорисуем <br>
+
+
+
+
+
+
+
+
+🔴
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 viewport display - клик кружочек <br>
 vpd - custom shape - scalex=28 <br>
 shift для могонокого <br>
@@ -1214,15 +1245,30 @@ ik-chain length=2 <br>
 колено смотрит всторону фиксим...<br>
 edit mode выделил коленки e. чашеки выделил. alt+p <br>
 clear parent= вырываем чашечки <br>
-deform transform → deform=off <br>
+deform 
+
+
+
+
+
+🔴
+
+
+
+
+
+
+
+
+transform → deform=off <br>
 </div>
 <div class="mooon">60)<br>
 pose mode = с голенью <br>
-констрайны - ik - target = armature <br>
+          🔴          констрайны - ik - target = armature <br>
 pole target =armatura <br>
 bone = cup-l <br>
 pole angle=90° <br>
--80deg <br>
+-80° <br>
 shift+i <br>
 active bone <br>
 f2=>ik.r <br>
@@ -1250,18 +1296,20 @@ s увелич его<br>
 e <br>
 m <br>
 полигон сжать в точку <br>
+<div class="usy">
 merge <br>
 *at center <br>
 at cursor <br>
 collapse <br>
 by distance <br>
+</div>
 получилась стрелочка <br>
 3 <br>
 a <br>
 delete → faces <br>
-delete → only faces ребра остались, фейсы иочодм <br>
+delete → only faces ребра остались, фейсы исчезли <br>
 берем нашу кость и <br>
-vpd → customshape → custom object прикручиваем этот обьект<br>
+ 🔴  vpd → customshape → custom object прикручиваем этот обьект<br>
 заскейлить до 0,4 <br>
 отключить in front и names <br>
 ctrl+tab 
